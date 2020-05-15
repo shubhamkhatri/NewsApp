@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/story_image"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/story_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintLeft_toRightOf="@id/story_image"
+        tools:text="Template News Story"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/story_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/story_title"
+        app:layout_constraintLeft_toRightOf="@id/story_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        tools:text="Template Section"/>
+
+    <TextView
+
+        android:id="@+id/story_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/story_image"
+        app:layout_constraintRight_toLeftOf="@+id/story_date"
+        app:layout_constraintTop_toBottomOf="@id/story_section"
+        tools:text="Template Category" />
+
+    <TextView
+        android:id="@+id/story_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@id/story_category"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/story_section"
+        tools:text="06/05/2020" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

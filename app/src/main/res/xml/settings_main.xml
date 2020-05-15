@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/menu_title">
+
+    <EditTextPreference
+        android:title="@string/settings_min_date_label"
+        android:inputType="date"
+        android:key="@string/settings_min_date_key"
+        android:selectAllOnFocus="true"
+        android:defaultValue="@string/settings_min_date_default_value"/>
+
+    <ListPreference
+        android:title="@string/settings_select_section_label"
+        android:entries="@array/settings_select_section_labels"
+        android:entryValues="@array/settings_select_section_values"
+        android:key="@string/settings_select_section_key"
+        android:defaultValue="@string/settings_min_date_default_value"/>
+
+
+</PreferenceScreen>

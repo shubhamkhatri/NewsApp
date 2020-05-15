@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">shubham NewsApp</string>
+
+    <string name="no_news_found">No News Found</string>
+    <string name="device_offline">Could not connect to network</string>
+    <string name="guardian_api_key">64fe3aa6-b457-4b98-a546-47e10c57926e</string>
+    <string name="menu_title">News List</string>
+    <string name="search_hint">Search a News...</string>
+    <string name="dismiss_popup">Return</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News App Settings</string>
+    <string name="settings_min_date_label">News From Date</string>
+    <string name="settings_min_date_default_value" translatable="false">2019-01-01</string>
+    <string name="settings_min_date_key" translatable="false">minimum_date</string>
+
+    <string name="settings_select_section_label">Section Selected</string>
+    <string name="settings_select_section_default_value" translatable="false">technology</string>
+    <string name="settings_select_section_key" translatable="false">select_section</string>
+
+    <string-array name="settings_select_section_labels">
+        <item>Technology</item>
+        <item>Sport</item>
+        <item>Politics</item>
+        <item>Culture</item>
+        <item>Lifestyle</item>
+    </string-array>
+
+    <string-array name="settings_select_section_values">
+        <item>technology</item>
+        <item>sport</item>
+        <item>politics</item>
+        <item>culture</item>
+        <item>lifeandstyle</item>
+    </string-array>
+</resources>
